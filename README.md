@@ -1,6 +1,4 @@
-Bien sûr ! Je serai heureux de t'aider à améliorer ta présentation. Voici une version corrigée de ton texte :
 
----
 
 Restaurant-WordPress est un projet que j'ai réalisé lors de ma première année de stage. Il s'agit d'un site web pour un restaurant que j'ai développé en utilisant HTML, CSS et la dernière version de Bootstrap. Maintenant, je souhaite migrer mon site vers WordPress pour bénéficier de ses fonctionnalités avancées et de sa facilité de gestion de contenu.
 
