@@ -1,6 +1,6 @@
 
 
-Restaurant-WordPress est un projet que j'ai réalisé lors de ma première année de stage. Il s'agit d'un site web pour un restaurant que j'ai développé en utilisant HTML, CSS et la dernière version de Bootstrap. Maintenant, je souhaite migrer mon site vers WordPress pour bénéficier de ses fonctionnalités avancées et de sa facilité de gestion de contenu.
+Restaurant-WordPress est un projet que j'ai réalisé lors de ma première année de stage. Il s'agit d'un site web pour un restaurant que j'ai développé en utilisant Html 5 , Css 3 , Bootstrap last version . Maintenant, je souhaite migrer mon site vers WordPress pour bénéficier de ses fonctionnalités avancées et de sa facilité de gestion de contenu.
 
 Pour commencer, j'ai installé WordPress en local sur mon ordinateur en utilisant XAMPP comme serveur. J'ai téléchargé la version française de WordPress depuis le site officiel et j'ai suivi les étapes d'installation standard.
 
