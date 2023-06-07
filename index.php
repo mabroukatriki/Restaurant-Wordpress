@@ -35,7 +35,7 @@ Template Name: Home Template
       <a href="<?php echo get_permalink(get_page_by_path('menu')); ?>" class="btn btn-transparent custom-btn" style="background-color: #CC9D2F;">Our Venue</a>
 
       <?php
-      //
+      
     $args = array(
       'post_type' => 'post',          // Type de publication : 'post' (articles)
       'posts_per_page' => 3           // Nombre d'articles à afficher : 3
@@ -77,6 +77,7 @@ Template Name: Home Template
     </div>
   </div>
 </section>
+
 <section class="container-fluid full-screen-image position-relative">
   <?php $full_screen_image = get_template_directory_uri() . '/image/photo.png'; ?>
   <img src="<?php echo $full_screen_image; ?>" alt="Full Screen Image" class="img-fluid w-100 mw-100">
@@ -85,5 +86,4 @@ Template Name: Home Template
     <a href="<?php echo get_permalink(get_page_by_path('menu')); ?>" class="btn btn-transparent custom-btn" style="background-color: #CC9D2F;">Our Menu</a>
   </div>
 </section>
-
 <?php get_footer(); ?>

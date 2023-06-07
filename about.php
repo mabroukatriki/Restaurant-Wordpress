@@ -51,7 +51,7 @@ Template Name: About Template
                     <img src="<?php echo get_template_directory_uri();?>/image/picture2.png" alt="Image 2" width="200" height="200">
                 </div>
                 <div class="col-lg-6">
-                    <h2 style="color: #FFFFFF;">One of the best restaurants in Saudi Arabia</h2>
+                    <h2 style="color: #FFFFFF;"> One of the best restaurants in Saudi Arabia</h2>
                     <p style="color: #5B0017;"> 
                         Your one direction to high-quality Saudi feasts,
                         since 1998 we served in Saudi Arabia.
@@ -81,45 +81,14 @@ Template Name: About Template
      
       
         <div class="bg-color-block">
-            <div class="container py-4">
-               
+            <div class="container py-4">              
                 <h3 style="color: #FFFFFF;"></h3>
                 <p style="color: #CC9D2F;"></p>
             </div>
         </div>
         
 
-        <section class="container my-5 bg-color-block" style="background-color: #5B0017;">
-            <div class="row d-flex align-items-stretch h-100">
-              <div class="col-lg-6">
-                <div class="border p-3 h-50 border-0">
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-12">
-                        <div class="text-center">
-                          <h4>Date 1</h4>
-                          <p>Description de l'événement 1</p>
-                        </div>
-                        <div class="text-center">
-                          <h4>Date 2</h4>
-                          <p>Description de l'événement 2</p>
-                        </div>
-                        <div class="text-center">
-                          <h4>Date 3</h4>
-                          <p>Description de l'événement 3</p>
-                        </div>
-                        <div class="text-center">
-                          <h4>Date 4</h4>
-                          <p>Description de l'événement 4</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          
+       
 
             <section class="bg-color-block d-flex align-items-center justify-content-center py-5" style="background-color: #243054">
                 <div class="container-fluid">
@@ -152,6 +121,6 @@ Template Name: About Template
                   </div>
                 </div>
               </section>
-              
+             
 
               <?php get_footer(); ?>

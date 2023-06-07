@@ -42,6 +42,7 @@ Template Name: Menu Template
     </div>
     <br>
     <br>
+    
     <div style="display: flex; justify-content: flex-start;">
         <ul class="menu-links" style="list-style-type: none;">
             <li style="display: inline; margin: 0 10px;"><a href="#" style="color: gray;">All Feast</a></li>
@@ -50,6 +51,7 @@ Template Name: Menu Template
             <li style="display: inline; margin: 0 10px;"><a href="#" style="color: gray;">Dessert</a></li>
         </ul>
     </div>
+
     <section>
       <div class="row">
         <div class="col-md-4">
