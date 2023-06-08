@@ -4,6 +4,7 @@ Template Name: Menu Template
 */
 ?>
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -26,9 +27,10 @@ Template Name: Menu Template
                     <a href="<?php echo get_permalink(get_page_by_path('menu')); ?>" class="nav-link" style="color: white;">Menu</a>
                 </nav>
             </div>
-            <div class="text-md-right">
+            
+	<div class="text-md-right">
                 <div class="p-2 border" style="background-color: #CC9D2F;">
-                    <span class="font-weight-bold">Book Now</span>
+                <span class="font-weight-bold">Book Now</span>
                 </div>
             </div>
         </div>
@@ -42,7 +44,7 @@ Template Name: Menu Template
     </div>
     <br>
     <br>
-    
+
     <div style="display: flex; justify-content: flex-start;">
         <ul class="menu-links" style="list-style-type: none;">
             <li style="display: inline; margin: 0 10px;"><a href="#" style="color: gray;">All Feast</a></li>
@@ -139,8 +141,8 @@ Template Name: Menu Template
           </div>
         </div>
       </div>
+
     </section>
-  
     <br>
     <button class="btn-transparent">Show more</button>
     <br>
@@ -159,6 +161,7 @@ Template Name: Menu Template
                             Vendredi<br>
                             De 14h00 à 01h00<br>
                         </p>
+                        
                         <h2 class="text-cc9d2f">Localisation</h2>
                         <p class="text-white">
                             Rue 127, Jeddah, Arabie saoudite<br>
@@ -169,6 +172,7 @@ Template Name: Menu Template
                     </div>
                 </div>
             </div>
+
             <div class="col-lg-6">
                 <div class="image-container d-flex align-items-center justify-content-center py-5 m-10">
                     <img src="<?php echo get_template_directory_uri(); ?>/image/carteRouge.png" class="image-style">
@@ -181,7 +185,7 @@ Template Name: Menu Template
     <!-- Footer -->
     <?php get_footer(); ?>
 
-
+ 
     <script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
 </body>
 </html>

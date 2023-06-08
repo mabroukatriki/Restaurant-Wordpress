@@ -1,3 +1,18 @@
+
+
+<?php
+/**
+ * The header for our theme.
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ * @package Theme_restaurant
+ * @since 1.0
+ */
+?>
+
+
+
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>

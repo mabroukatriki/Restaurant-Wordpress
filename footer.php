@@ -12,15 +12,9 @@
                  
               <div class="text-center">
                 <nav class="nav justify-content-center">
-               
                     <a href="<?php echo get_permalink(get_page_by_path('index')); ?>" class="nav-link" style="color: #5B0017;">Home</a>
                     <a href="<?php echo get_permalink(get_page_by_path('about')); ?>" class="nav-link" style="color: #5B0017;">About</a>
                     <a href="<?php echo get_permalink(get_page_by_path('menu')); ?>" class="nav-link" style="color: #5B0017;">Menu</a>
-           
-
-
-
-
                 </nav>
             </div>
 
@@ -39,9 +33,10 @@
             
             </div>
             </div>
-            </div>
+</div>
             </footer>
             <script src="<?php echo get_template_directory_uri();?>/js/bootstrap.bundle.min.js"></script>
+            
 </body>
 
 </html>
