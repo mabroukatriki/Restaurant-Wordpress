@@ -50,6 +50,7 @@ Template Name: About Template
                     <img src="<?php echo get_template_directory_uri();?>/image/picture1.png" alt="Image 1" width="200" height="200">
                     <img src="<?php echo get_template_directory_uri();?>/image/picture2.png" alt="Image 2" width="200" height="200">
                 </div>
+
                 <div class="col-lg-6">
                     <h2 style="color: #FFFFFF;"> One of the best restaurants in Saudi Arabia</h2>
                     <p style="color: #5B0017;"> 
@@ -72,6 +73,7 @@ Template Name: About Template
                         tincidunt varius. Ut sagittis, lorem at bibendum
                         ornare, mauris neque venenatis justo, ut gravidami neque eu lorem.
                     </p>
+                    
                     <p style="color: #5B0017;">
                         Vestibulum auctor leo sit amet vulputate mollis. Curabitur ac lorem felis. Morbiullamcorper maximus lorem.
                     </p>
@@ -87,8 +89,6 @@ Template Name: About Template
             </div>
         </div>
         
-
-       
 
             <section class="bg-color-block d-flex align-items-center justify-content-center py-5" style="background-color: #243054">
                 <div class="container-fluid">

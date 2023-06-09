@@ -3,6 +3,7 @@
 Template Name: Home Template
 */
 ?>
+
 <?php get_header(); ?>
 <section class="container d-flex align-items-center justify-content-center my-5">
   <div class="row">
@@ -39,7 +40,7 @@ Template Name: Home Template
       
     $args = array(
       'post_type' => 'post',          // Type de publication : 'post' (articles)
-      'posts_per_page' => 3           // Nombre d'articles à afficher : 3
+      'posts_per_page' => 3           // Nombre de page à afficher : 3
     );
     
     
