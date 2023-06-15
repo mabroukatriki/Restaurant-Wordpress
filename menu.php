@@ -4,7 +4,7 @@ Template Name: Menu Template
 */
 ?>
 <!DOCTYPE html>
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,19 +16,30 @@ Template Name: Menu Template
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
 </head>
 <body class="custom-bg">
-    <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-center">
-        <div class="container">
-            <img src="<?php echo get_template_directory_uri(); ?>/image/logo1.png" alt="Logo Maiz" width="100" height="100">
-            <div class="text-center">
-                <nav class="nav justify-content-center">
-                    <a href="<?php echo get_permalink(get_page_by_path('index')); ?>" class="nav-link" style="color: white;">Home</a>
-                    <a href="<?php echo get_permalink(get_page_by_path('about')); ?>" class="nav-link" style="color: white;">About</a>
-                    <a href="<?php echo get_permalink(get_page_by_path('menu')); ?>" class="nav-link" style="color: white;">Menu</a>
-                </nav>
-            </div>
+<!-- Header -->
+<nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-center">
+    <div class="container">
+        <a href="<?php echo esc_url(home_url('/')); ?>" class="navbar-brand">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/image/logo1.png" alt="Logo Maiz" width="100" height="100">
+        </a>
+        <div class="text-center">
+            <?php
+            wp_nav_menu( array(
+                'theme_location' => 'primary', // Emplacement du menu
+                'menu_class'     => 'nav justify-content-center', // Classe CSS pour le menu
+                'fallback_cb'    => false, // Désactiver la fonction de rappel par défaut
+                'container'      => false, // Supprimer le conteneur autour du menu
+                'echo'           => true, // Afficher le menu
+            ) );
+            ?>
+        </div> 
+    </div>
+</nav>
+
+
+
             
-	<div class="text-md-right">
+            <div class="text-md-right">
                 <div class="p-2 border" style="background-color: #CC9D2F;">
                 <span class="font-weight-bold">Book Now</span>
                 </div>
@@ -37,6 +48,8 @@ Template Name: Menu Template
     </nav>
 
     <!-- Menu Section -->
+
+
     <div class="container">
         <p style="color: #CC9D2F; display: inline-block; float: left;">OUR MENU</p><br>
         <h1 style="color: #ffffff; display: inline-block;">Discover<br> Our Menu</h1>
@@ -58,16 +71,17 @@ Template Name: Menu Template
       <div class="row">
         <div class="col-md-4">
           <div class="card mb-3">
-            <img src="<?php echo get_template_directory_uri(); ?>/image/bukhari.png" class="card-img-top" alt="...">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/image/bukhari.png" class="card-img-top" alt="...">
             <div class="card-body">
               <p class="card-text">Bukhari</p>
             </div>
           </div>
         </div>
   
+
         <div class="col-md-4">
           <div class="card mb-3">
-            <img src="<?php echo get_template_directory_uri(); ?>/image/SaudiMakboss.png" class="card-img-top" alt="...">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/image/SaudiMakboss.png" class="card-img-top" alt="...">
             <div class="card-body">
               <p class="card-text">Saudi Makboos</p>
             </div>
@@ -76,7 +90,7 @@ Template Name: Menu Template
   
         <div class="col-md-4">
           <div class="card mb-3">
-            <img src="<?php echo get_template_directory_uri(); ?>/image/Zubiam.png" class="card-img-top" alt="...">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/image/Zubiam.png" class="card-img-top" alt="...">
             <div class="card-body">
               <p class="card-text">Zubiam</p>
             </div>
@@ -87,7 +101,7 @@ Template Name: Menu Template
       <div class="row">
         <div class="col-md-4">
           <div class="card mb-3">
-            <img src="<?php echo get_template_directory_uri(); ?>/image/Kabsa.png" class="card-img-top" alt="...">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/image/Kabsa.png" class="card-img-top" alt="...">
             <div class="card-body">
               <p class="card-text">Kabsa</p>
             </div>
@@ -96,7 +110,7 @@ Template Name: Menu Template
   
         <div class="col-md-4">
           <div class="card mb-3">
-            <img src="<?php echo get_template_directory_uri(); ?>/image/Madfoon.png" class="card-img-top" alt="...">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/image/Madfoon.png" class="card-img-top" alt="...">
             <div class="card-body">
               <p class="card-text">Madfoon</p>
             </div>
@@ -105,7 +119,7 @@ Template Name: Menu Template
   
         <div class="col-md-4">
           <div class="card mb-3">
-            <img src="<?php echo get_template_directory_uri(); ?>/image/MathLootha.png" class="card-img-top" alt="...">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/image/MathLootha.png" class="card-img-top" alt="...">
             <div class="card-body">
               <p class="card-text">Math Lootha</p>
             </div>
@@ -116,7 +130,7 @@ Template Name: Menu Template
       <div class="row">
         <div class="col-md-4">
           <div class="card mb-3">
-            <img src="<?php echo get_template_directory_uri(); ?>/image/Margoug.png" class="card-img-top" alt="...">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/image/Margoug.png" class="card-img-top" alt="...">
             <div class="card-body">
               <p class="card-text">Margoug</p>
             </div>
@@ -125,7 +139,7 @@ Template Name: Menu Template
   
         <div class="col-md-4">
           <div class="card mb-3">
-            <img src="<?php echo get_template_directory_uri(); ?>/image/Sayadya.png" class="card-img-top" alt="...">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/image/Sayadya.png" class="card-img-top" alt="...">
             <div class="card-body">
               <p class="card-text">Sayadya</p>
             </div>
@@ -134,58 +148,97 @@ Template Name: Menu Template
   
         <div class="col-md-4">
           <div class="card mb-3">
-            <img src="<?php echo get_template_directory_uri(); ?>/image/Saleeg.png" class="card-img-top" alt="...">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/image/Saleeg.png" class="card-img-top" alt="...">
             <div class="card-body">
               <p class="card-text">Saleeg</p>
             </div>
           </div>
         </div>
       </div>
-
     </section>
     <br>
-    <button class="btn-transparent">Show more</button>
-    <br>
+    <button class="btn btn-primary" style="margin-left: 45%;">Load More</button>
 
-    
-   <section class="bg-color-block">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="d-flex align-items-center justify-content-center py-5 custom-bg-color h-100">
-                    <div class="border-0 p-3">
-                        <h1 class="text-cc9d2f">Horaires de travail</h1>
-                        <p class="text-white">
-                            <br>
-                            Dimanche à samedi de 09h00 à 23h00<br>
-                            Vendredi<br>
-                            De 14h00 à 01h00<br>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start" style="background-color: #222222; color: white;">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <div>
+                <a href="#" class="me-4 text-reset">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="#" class="me-4 text-reset">
+                    <i class="bi bi-twitter"></i>
+                </a>
+                <a href="#" class="me-4 text-reset">
+                    <i class="bi bi-google"></i>
+                </a>
+                <a href="#" class="me-4 text-reset">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="#" class="me-4 text-reset">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="#" class="me-4 text-reset">
+                    <i class="bi bi-github"></i>
+                </a>
+            </div>
+        </section>
+
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold">Maiz</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #CC9D2F; height: 2px;" />
+                        <p>
+                            A restaurant that offers traditional Saudi Arabian cuisine with a modern twist.
                         </p>
-                        
-                        <h2 class="text-cc9d2f">Localisation</h2>
-                        <p class="text-white">
-                            Rue 127, Jeddah, Arabie saoudite<br>
-                            546544<br>
+                    </div>
+
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold">Useful links</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #CC9D2F; height: 2px;" />
+                        <p>
+                            <a href="<?php echo esc_url(home_url('/')); ?>" class="text-reset">Home</a>
                         </p>
-                        <h3 class="text-cc9d2f">Contactez-nous</h3>
-                        <p class="text-white">+123456789<br>service@maizrestaurant.com</p>
+                        <p>
+                            <a href="<?php echo esc_url(get_permalink(get_page_by_path('about'))); ?>" class="text-reset">About</a>
+                        </p>
+                        <p>
+                            <a href="<?php echo esc_url(get_permalink(get_page_by_path('menu'))); ?>" class="text-reset">Menu</a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold">Quick links</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #CC9D2F; height: 2px;" />
+                        <p>
+                            <a href="#" class="text-reset">Book a Table</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-reset">Contact</a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold">Contact</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #CC9D2F; height: 2px;" />
+                        <p><i class="bi bi-house-door-fill"></i> Riyadh, Saudi Arabia</p>
+                        <p><i class="bi bi-envelope-fill"></i> info@maiz.com</p>
+                        <p><i class="bi bi-phone-fill"></i> +966 123456789</p>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="col-lg-6">
-                <div class="image-container d-flex align-items-center justify-content-center py-5 m-10">
-                    <img src="<?php echo get_template_directory_uri(); ?>/image/carteRouge.png" class="image-style">
-                </div>
-            </div>
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            &copy; 2023 Maiz. All rights reserved.
         </div>
-    </div>
-</section>
+    </footer>
 
-    <!-- Footer -->
-    <?php get_footer(); ?>
-
- 
-    <script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
+    <script src="<?php get_stylesheet_directory_uri() ; ?>/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
