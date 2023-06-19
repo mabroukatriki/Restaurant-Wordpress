@@ -11,28 +11,30 @@
 
         <div class="text-center">
             <?php
-            wp_nav_menu( array(
-                'theme_location' => 'footer', // Emplacement du menu
-                'menu_class'     => 'nav justify-content-center', // Classe CSS pour le menu
-                'fallback_cb'    => false, // Désactiver la fonction de rappel par défaut
-                'container'      => false, // Supprimer le conteneur autour du menu
-                'items_wrap'     => '<nav id="%1$s" class="%2$s">%3$s</nav>', // Personnaliser la structure du menu
-            ) );
-            ?>
+         wp_nav_menu( array(
+            'theme_location' => 'footer',
+            'menu_class'     => 'nav justify-content-center',
+            'fallback_cb'    => false,
+            'container'      => 'nav',
+            'container_class' => 'nav justify-content-center',
+            'items_wrap'     => '%3$s',
+        ) );
+        ?>
         </div>
 
         <hr class="border-white long-hr">
         <div class="d-flex justify-content-between align-items-center">
-            <p class="mb-2 text-gray">© 2023 | All rights reserved</p>
+            <p class="mb-2 text-gray">© <?php echo date('Y'); ?> | <?php bloginfo('name'); ?> | <?php _e('All rights reserved', 'text-domain'); ?></p>
             <div class="d-flex justify-content-center">
-                <a href="" class="me-3"><i class="bi bi-facebook text-gray"></i></a>
-                <a href="#" class="me-3"><i class="bi bi-twitter text-gray"></i></a>
-                <a href="#" class="me-3"><i class="bi bi-instagram text-gray"></i></a>
-                <a href="#" class="me-3"><i class="bi bi-linkedin text-gray"></i></a>
+                <a href="<?php echo esc_url('https://facebook.com'); ?>" class="me-3"><i class="bi bi-facebook text-gray"></i></a>
+                <a href="<?php echo esc_url('https://twitter.com'); ?>" class="me-3"><i class="bi bi-twitter text-gray"></i></a>
+                <a href="<?php echo esc_url('https://instagram.com'); ?>" class="me-3"><i class="bi bi-instagram text-gray"></i></a>
+                <a href="<?php echo esc_url('https://linkedin.com'); ?>" class="me-3"><i class="bi bi-linkedin text-gray"></i></a>
             </div>
         </div>
     </div>
 </footer>
-<script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.bundle.min.js"></script>
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/bootstrap.bundle.min.js"></script>
+<?php wp_footer(); ?>
 </body>
 </html>

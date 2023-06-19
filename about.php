@@ -3,6 +3,7 @@
 Template Name: About Template
 */
 ?>
+<?php get_header(); ?>
 <html <?php language_attributes(); ?>>
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
@@ -16,17 +17,9 @@ Template Name: About Template
 <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-center">
     <div class="container">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/image/maiz2.png" alt="Logo Maiz" width="100" height="100">
-        <div class="text-center">
-            <?php
-            wp_nav_menu( array(
-                'theme_location' => 'primary', // Emplacement du menu
-                'menu_class'     => 'nav justify-content-center', // Classe CSS pour le menu
-                'fallback_cb'    => false, // Désactiver la fonction de rappel par défaut
-                'container'      => false, // Supprimer le conteneur autour du menu
-                'items_wrap'     => '<nav id="%1$s" class="%2$s">%3$s</nav>', // Personnaliser la structure du menu
-            ) );
-            ?>
-        </div>
+     
+      
+
         <div class="text-right">
             <div class="p-2 border" style="background-color: #5B0017;">
                 <span class="font-weight-bold" style="color: #CC9D2F;"><?php esc_html_e('Book Now', 'your-theme-textdomain'); ?></span>
