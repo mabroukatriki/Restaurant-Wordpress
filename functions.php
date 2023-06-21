@@ -62,4 +62,13 @@ function custom_register_post_type() {
 add_action('init', 'custom_register_post_type');
 
 
+function theme_register_menus() {
+    register_nav_menus( array(
+        'header' => 'Header Menu',
+        'footer' => 'Footer Menu',
+    ) );
+}
+add_action( 'after_setup_theme', 'theme_register_menus' );
+
+
 // END ENQUEUE CHILD ACTION

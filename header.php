@@ -18,6 +18,7 @@
         'menu_class'     => 'nav justify-content-center menu-list', // la classe CSS personnalisée "menu-list"
     ) );
     ?>
+    
 </div>
 
           
