@@ -32,6 +32,20 @@ Template Name: Home Template
     <section class="container d-flex align-items-center justify-content-center my-5">
         <div class="row">
             <div class="col-md-6">
+              
+        <?php
+               if ( have_posts() ) {
+                while ( have_posts() ) {
+            
+                    the_post(); ?>
+
+        <h2><?php the_title(); ?></h2>
+
+        <?php the_content(); ?>
+
+        <?php }
+            }
+               ?>
                 <div class="bg-transparent p-3 transparent-bg">
                     <h1 class="display-4 text-white title"><?php esc_html_e('Taste the authentic Saudi cuisine', 'your-theme-textdomain'); ?></h1>
                     <p class="lead text-white"><?php esc_html_e('Among the best Saudi chefs in the world, serving you something beyond flavor.', 'your-theme-textdomain'); ?></p>
