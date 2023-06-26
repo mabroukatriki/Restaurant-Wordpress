@@ -24,11 +24,9 @@ Template Name: About Template
 
 
 
-            <div class="text-right">
-                <div class="p-2 border" style="background-color: #5B0017;">
-                    <span class="font-weight-bold"
-                        style="color: #CC9D2F;"><?php esc_html_e('Book Now', 'your-theme-textdomain'); ?></span>
-                </div>
+                <div class="p-2 border" style="background-color: #CC9D2F;">
+    <a href="booking.php" class="font-weight-bold text-white">Book Now</a>
+  </div>
             </div>
         </div>
     </nav>
@@ -54,10 +52,8 @@ Template Name: About Template
 
 
 
-       
+      
 
-        
-            
 
         <?php get_footer(); ?>
     </div>

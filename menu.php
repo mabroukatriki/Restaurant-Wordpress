@@ -30,10 +30,11 @@ Template Name: Menu Template
 
 
     
-            <div class="text-md-right">
-                <div class="p-2 border" style="background-color: #CC9D2F;">
-                <span class="font-weight-bold">Book Now</span>
-                </div>
+        <div class="text-md-right">
+  <div class="p-2 border" style="background-color: #CC9D2F;">
+    <a href="booking.php" class="font-weight-bold text-white">Book Now</a>
+  </div>
+</div>
             </div>
         </div>
     </nav>
@@ -42,114 +43,27 @@ Template Name: Menu Template
 
 
     <div class="container">
-        <p style="color: #CC9D2F; display: inline-block; float: left;">OUR MENU</p><br>
-        <h1 style="color: #ffffff; display: inline-block;">Discover<br> Our Menu</h1>
-        <p style="color: gray; float: right;">There is a wide selection of choices served by top Saudi chefs, prepared using the best quality local ingredients.</p>
+    <?php
+               if ( have_posts() ) {
+                while ( have_posts() ) {
+            
+                    the_post(); ?>
+
+        <h2><?php the_title(); ?></h2>
+
+        <?php the_content(); ?>
+
+        <?php }
+            }
+               ?>
+       
+
+  
+
+  
     </div>
-    <br>
-    <br>
-
-    <div style="display: flex; justify-content: flex-start;">
-        <ul class="menu-links" style="list-style-type: none;">
-            <li style="display: inline; margin: 0 10px;"><a href="#" style="color: gray;">All Feast</a></li>
-            <li style="display: inline; margin: 0 10px;"><a href="#" style="color: gray;">Coffee</a></li>
-            <li style="display: inline; margin: 0 10px;"><a href="#" style="color: gray;">Cocktails</a></li>
-            <li style="display: inline; margin: 0 10px;"><a href="#" style="color: gray;">Dessert</a></li>
-        </ul>
     </div>
-
-    <section>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card mb-3">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/image/bukhari.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Bukhari</p>
-            </div>
-          </div>
-        </div>
-  
-
-        <div class="col-md-4">
-          <div class="card mb-3">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/image/SaudiMakboss.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Saudi Makboos</p>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-md-4">
-          <div class="card mb-3">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/image/Zubiam.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Zubiam</p>
-            </div>
-          </div>
-        </div>
-      </div>
-  
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card mb-3">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/image/Kabsa.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Kabsa</p>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-md-4">
-          <div class="card mb-3">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/image/Madfoon.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Madfoon</p>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-md-4">
-          <div class="card mb-3">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/image/MathLootha.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Math Lootha</p>
-            </div>
-          </div>
-        </div>
-      </div>
-  
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card mb-3">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/image/Margoug.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Margoug</p>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-md-4">
-          <div class="card mb-3">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/image/Sayadya.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Sayadya</p>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-md-4">
-          <div class="card mb-3">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/image/Saleeg.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Saleeg</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <br>
-    <div class="text-center">
-    <button class="btn btn-primary mx-auto d-block">Load More</button>
+    </div>
 </div>
 
 
